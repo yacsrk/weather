@@ -4,9 +4,8 @@ import com.ing.airquality.data.api.AirVisualApi
 import com.ing.airquality.domain.model.Measurement
 import com.ing.airquality.domain.repository.AirQualityRepository
 import io.reactivex.Single
-import javax.inject.Inject
 
-class AirVisualAirQualityRepository @Inject constructor(
+class AirVisualAirQualityRepository(
         private val airVisualApi: AirVisualApi
 ) : AirQualityRepository {
 

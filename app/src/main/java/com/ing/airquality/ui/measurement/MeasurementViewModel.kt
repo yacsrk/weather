@@ -4,9 +4,8 @@ import android.arch.lifecycle.ViewModel
 import com.ing.airquality.domain.interactor.GetNearestMeasurement
 import com.ing.airquality.ui.LiveDataDelegate
 import io.reactivex.disposables.Disposable
-import javax.inject.Inject
 
-class MeasurementViewModel @Inject constructor(
+class MeasurementViewModel(
         getNearestMeasurement: GetNearestMeasurement
 ) : ViewModel() {
 

@@ -21,17 +21,11 @@ class MeasurementFragment : Fragment() {
     }
 
     private val component by lazy {
-        requireActivity()
-                .application
-                .component
-                .airQualityComponent()
-                .build()
+        TODO()
     }
     private val viewModel by viewModelProvider { component.viewModel() }
 
-    @Inject
     lateinit var picasso: Picasso
-    @Inject
     lateinit var dateFormat: SimpleDateFormat
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
@@ -40,7 +34,6 @@ class MeasurementFragment : Fragment() {
     }
 
     override fun onAttach(context: Context?) {
-        component.inject(this)
         super.onAttach(context)
     }
 
