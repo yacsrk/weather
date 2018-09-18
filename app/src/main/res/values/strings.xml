@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Air Quality</string>
+    <string name="measurement_date">Measured on</string>
+    <string name="temperature">%d°C</string>
+</resources>
